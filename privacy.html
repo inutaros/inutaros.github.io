@@ -1,0 +1,12 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>プライバシーポリシー | ai-shared-context-backup-pilot</title><link rel="stylesheet" href="style.css"></head><body><main>
+<h1>プライバシーポリシー</h1><p>対象アプリ：ai-shared-context-backup-pilot<br>運営者：inutaros<br>文書更新日：2026年11月17日</p>
+<h2>1．処理する情報と目的</h2><p>本アプリは、運営者本人が指定したGitHubリポジトリのファイル、変更履歴、コミットに含まれる作成者名・メールアドレスなどを、バックアップと復元確認のために処理します。</p><p>Google Driveでは、本アプリがアクセスを許可されたバックアップファイルの内容、名前、識別子、サイズなどと、アカウントの保存容量に関する情報を扱います。利用目的は、バックアップの保存、容量確認、読み戻しによる整合性確認です。</p><p>実行日時、成功・失敗の状態、ファイル識別子、整合性確認用のハッシュ値などを、実行証跡として記録します。</p>
+<h2>2．アクセス権限</h2><p>Driveへのアクセスには <code>drive.file</code> 権限を使用します。この権限は対象ファイルの参照・作成・編集・削除を含みますが、現在のバックアップ処理には自動削除機能を実装していません。</p><p>別の監視機能はGitHubの実行結果と証跡を読み取り、安全停止用の制御情報を更新し、運営者本人へメールを送信します。受信メール本文は読み取りません。</p>
+<h2>3．保存先と保護</h2><p>バックアップは運営者のGoogle Driveに保存します。実行証跡は、非公開のGitHub管理リポジトリに関連する実行環境に保存します。取得・復元照合の過程では、実行環境内に一時コピーを作成します。</p><p>認証情報はGitHub Actions Secretsまたは非公開のApps Script設定領域に保存し、公開ページやGitのファイルには記載しません。</p>
+<h2>4．第三者サービスとAIの利用</h2><p>処理にはGitHubおよびGoogleのサービス基盤を利用します。各社による情報の取扱いには、各社の規約とプライバシーポリシーも適用されます。</p><p>バックアップ情報を販売したり、広告配信に利用したりしません。バックアップ処理自体はファイル本文を生成AIへ送信しません。AIによる保守支援を利用する場合は、運営者が承認した目的と情報の範囲に限定します。</p><p>本アプリによるGoogle APIから取得した情報の利用および他のアプリへの転送は、Limited Use要件を含むGoogle API Services User Data Policyに従います。</p>
+<h2>5．保存期間</h2><p>Driveのバックアップは、運営者が削除するまで保存します。現在、自動的な世代削除は行いません。</p><p>新しい実行証跡のGitHub artifact保持期間は30日です。サービス側のログや一時データは、各サービスの設定と保持方針に従います。運営者が取得したローカルコピーは、運営者が別途管理します。</p>
+<h2>6．アクセス停止と削除</h2><p>Googleアカウントから本アプリのアクセス権限を取り消すことで、以後のGoogle Driveへのアクセスを停止できます。権限の取消しだけでは、保存済みバックアップは削除されません。</p><p>情報を削除する場合は、Drive内のバックアップ、ごみ箱、実行証跡、取得済みのローカルコピーなどを、それぞれ確認して削除します。元のリポジトリから削除した情報も、過去のGit履歴やバックアップに残る場合があります。</p>
+<h2>7．説明サイトのアクセス情報</h2><p>運営者独自の広告、アクセス解析、問い合わせフォームは設置しません。GitHub Pagesは、セキュリティ目的で訪問者のIPアドレスを記録・保存します。</p>
+<h2>8．問い合わせと変更</h2><p>問い合わせ先：<a href="mailto:ozexe00@gmail.com">ozexe00@gmail.com</a></p><p>情報の取扱いを変更する場合は、本ページの内容と更新日を変更します。</p>
+<p>参照：<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>、<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>、<a href="https://policies.google.com/privacy">Google Privacy Policy</a>。</p>
+<nav><a href="index.html">ホーム</a> · <a href="terms.html">利用規約</a></nav></main></body></html>
